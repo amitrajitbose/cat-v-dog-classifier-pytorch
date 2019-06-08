@@ -28,9 +28,9 @@ def predict(imagepath, verbose=False):
     ps=torch.exp(model(image1))
     topconf, topclass = ps.topk(1, dim=1)
     if topclass.item() == 1:
-        return {'class':'dog','confidence':topconf.item()}
+        return {'class':'dog','confidence':str(topconf.item())}
     else:
-        return {'class':'cat','confidence':topconf.item()}
+        return {'class':'cat','confidence':str(topconf.item())}
 
 #print(predict('data/dog1.jpeg'))
 #print(predict('data/cat1.jpeg'))

@@ -3,6 +3,7 @@ from utils.helpers import *
 import warnings
 from PIL import Image
 from torchvision import transforms
+#from torchsummary import summary
 
 def image_transform(imagepath):
     test_transforms = transforms.Compose([transforms.Resize(255),
@@ -21,6 +22,7 @@ def predict(imagepath, verbose=False):
     model_path = './models/catvdog.pth'
     model = load_model(model_path)
     model.eval()
+    #summary(model, input_size=(3,244,244))
     if verbose:
         print("Model Loaded..")
     image = image_transform(imagepath)

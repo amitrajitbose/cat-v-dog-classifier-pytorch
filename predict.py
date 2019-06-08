@@ -26,10 +26,11 @@ def predict(imagepath, verbose=False):
     image = image_transform(imagepath)
     image1 = image[None,:,:,:]
     ps=torch.exp(model(image1))
-    if ps.topk(1, dim=1)[1].item() == 1:
-        return 'dog'
+    topconf, topclass = ps.topk(1, dim=1)
+    if topclass.item() == 1:
+        return {'class':'dog','confidence':topconf.item()}
     else:
-        return 'cat'
+        return {'class':'cat','confidence':topconf.item()}
 
 #print(predict('data/dog1.jpeg'))
 #print(predict('data/cat1.jpeg'))

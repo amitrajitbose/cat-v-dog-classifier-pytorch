@@ -1,4 +1,5 @@
 import predict
+import sys
 import requests
 from io import BytesIO
 from flask import Flask, request, jsonify
@@ -9,10 +10,10 @@ def prediction():
     data = request.get_json(force=True)
     image = BytesIO(requests.get(data['url']).content)
     output = predict.predict(image)
-    #prediction = model.predict([[np.array(data['exp'])]])
-    #output = prediction[0]
-    #return jsonify(output)
     return jsonify(output)
 
 if __name__ == '__main__':
-    app.run(port=8123, debug=True)
+    try:
+        app.run(port=int(sys.argv[1]), debug=True)
+    except:
+        app.run(port=8123,debug=True)

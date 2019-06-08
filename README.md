@@ -20,4 +20,8 @@ The dataset is available at Kaggle and has been provided officially by Microsoft
 
 ### Endpoints
 
+### Related Papers
+
+http://xenon.stanford.edu/~pgolle/papers/dogcat.pdf
+
 #### To Be Updated ...

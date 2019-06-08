@@ -36,6 +36,9 @@ API endpoint ready, undergoing testing. API Docs coming soon! :)
 
 We used a 121-layer DenseNet with a custom classifier for training the above network. It was trained on a GPU and it took approximately 30 minutes for a single epoch. Below is the Keras styled in-detail model summary, generated using [torchsummary](https://pypi.org/project/torchsummary/).
 
+<details>
+  <summary>View Complete Architecture</summary>
+
 ```
 ----------------------------------------------------------------
         Layer (type)               Output Shape         Param #
@@ -425,6 +428,7 @@ Estimated Total Size (MB): 370.92
 ----------------------------------------------------------------
 
 ```
+</details>
 
 ### Related Papers
 

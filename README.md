@@ -467,5 +467,9 @@ Estimated Total Size (MB): 370.92
 ### Related Papers
 
 - [Machine Learning Attacks Against the Asirra CAPTCHA](http://xenon.stanford.edu/~pgolle/papers/dogcat.pdf)
+- [DenseNet](https://arxiv.org/abs/1608.06993)
+- [An Optical Frontend for a Convolutional Neural Network](https://arxiv.org/pdf/1901.03661.pdf)
 
-##### To Be Updated ...
+### Live Server
+
+We are trying to set up a live server with the help of PythonAnyWhere. Any updates will be reflected here.

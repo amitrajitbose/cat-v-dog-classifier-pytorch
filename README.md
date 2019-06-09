@@ -470,6 +470,15 @@ Estimated Total Size (MB): 370.92
 - [DenseNet](https://arxiv.org/abs/1608.06993)
 - [An Optical Frontend for a Convolutional Neural Network](https://arxiv.org/pdf/1901.03661.pdf)
 
-### Live Server
+### Team
 
-We are trying to set up a live server with the help of PythonAnyWhere. Any updates will be reflected here.
+- [Amitrajit Bose](https://www.linkedin.com/in/amitrajitbose/)
+
+### Issues
+
+Feel free to submit any issues.
+
+### Contributions
+
+Currently open to only issues and bug fix related PRs. Feel free to solve an issue and submit a PR.
+

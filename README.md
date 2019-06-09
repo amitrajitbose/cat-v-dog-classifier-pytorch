@@ -28,6 +28,14 @@ matplotlib==3.0.2
 
 ### Benchmarks
 
+Our algorithm or model matched an average of 98% accuracy on test set. The best submission on Kaggle for the same is 98.9%. For more details you can check the [leaderboard](https://www.kaggle.com/c/dogs-vs-cats/leaderboard).
+
+Below is the snapshot that was generated when we were training the model and validating its performance.
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/amitrajitbose/cat-v-dog-classifier-pytorch/master/data/training.png">
+</p>
+
 ### API (REST) Endpoint
 
 - Run `python app.py` to start the server, with default port as `8123`. 
@@ -41,7 +49,7 @@ matplotlib==3.0.2
         http://127.0.0.1:8123/api \
         -H 'content-type: application/json' \
         -d '{"url":"https://images.unsplash.com/photo-1491604612772-6853927639ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"}'
-    
+
 </details>
 
 <details>

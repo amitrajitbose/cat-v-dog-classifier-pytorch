@@ -28,24 +28,34 @@ matplotlib==3.0.2
 
 ### Benchmarks
 
-### API Endpoint
+### API (REST) Endpoint
+
+- Run `python app.py` to start the server, with default port as `8123`. 
+- To run on custom port, run `python app.py [PORT]`.
+
+
+<details>
+    <summary>cURL</summary>
+
+    curl -X POST \
+        http://127.0.0.1:8123/api \
+        -H 'content-type: application/json' \
+        -d '{"url":"https://images.unsplash.com/photo-1491604612772-6853927639ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"}'
+    
+</details>
 
 <details>
     <summary>Python</summary>
-    
-    - Run `python app.py` to start the server, with default port as 8123. 
-    - To set custom port, run `python app.py [PORT]`.
 
-    ```
-    >>> import json, requests, os
+    >>> import requests, os
     >>> url = 'http://127.0.0.1:8123/api'
     >>> data = {
         "url":"https://images.unsplash.com/photo-1491604612772-6853927639ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
     }
     >>> req = requests.post(url, json=data)
-    >>> json.loads(req.text)
+    >>> req.json()
     {'class': 'dog', 'confidence': '0.8944258093833923'}
-    ```
+    
 </details>
 
 ### Architecture

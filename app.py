@@ -14,6 +14,6 @@ def prediction():
 
 if __name__ == '__main__':
     try:
-        app.run(port=int(sys.argv[1]), debug=True)
+        app.run(port=int(sys.argv[1]), debug=False)
     except:
-        app.run(port=8123,debug=True)
+        app.run(port=8123,debug=False)

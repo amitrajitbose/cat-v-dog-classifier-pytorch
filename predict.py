@@ -20,7 +20,10 @@ def predict(imagepath, verbose=False):
     if not verbose:
         warnings.filterwarnings('ignore')
     model_path = './models/catvdog.pth'
-    model = load_model(model_path)
+    try:
+        checks_if_model_is_loaded = type(model)
+    except:
+        model = load_model(model_path)
     model.eval()
     #summary(model, input_size=(3,244,244))
     if verbose:

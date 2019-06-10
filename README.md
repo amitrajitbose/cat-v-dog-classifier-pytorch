@@ -14,7 +14,7 @@ The dataset is available at Kaggle and has been provided officially by Microsoft
 
 ### Requirements
 
-We recommend using `pip install -r requirements.txt` for setting up the environment. Below is the detailed 
+We recommend to create a virtual environment using [conda](https://anaconda.org/anaconda/conda) or [virtualenv](https://pypi.org/project/virtualenv/), and then setup environment using `pip install -r requirements.txt` for setting up the environment. We have used **Python 3.6.7** for development. Below is the detailed 
 
 ```
 torch==1.1.0
@@ -38,9 +38,12 @@ Below is the snapshot that was generated when we were training the model and val
 
 ### API (REST) Endpoint
 
+**Running The Server**
+
 - Run `python app.py` to start the server, with default port as `8123`. 
 - To run on custom port, run `python app.py [PORT]`.
 
+**Accessing The API**
 
 <details>
     <summary>cURL</summary>
@@ -467,7 +470,7 @@ Estimated Total Size (MB): 370.92
 ### Related Papers
 
 - [Machine Learning Attacks Against the Asirra CAPTCHA](http://xenon.stanford.edu/~pgolle/papers/dogcat.pdf)
-- [DenseNet](https://arxiv.org/abs/1608.06993)
+- [Densely Connected Convolutional Networks](https://arxiv.org/abs/1608.06993)
 - [An Optical Frontend for a Convolutional Neural Network](https://arxiv.org/pdf/1901.03661.pdf)
 
 ### Team
